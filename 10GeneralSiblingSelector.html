@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>General Sibbling Selector</title>
+    <style>
+        h1~p{
+            color: turquoise;
+        }
+        h1~ul{
+            color: tomato;
+        }
+    </style>
+</head>
+<body style="background-color: lightslategray;">
+    <div>
+        <h1>PIAIC offers following courses:</h1>
+        <ul >
+            <li>Artificial Intelligence</li>
+            <li>Blockchain</li>
+            <li class="cnc">Cloud Native Computing</li>
+            <li>Internet of Things</li>
+        </ul>
+        <p>this should not change its color</p>
+    </div>
+    <div>
+        <h1>General Sibbling Selector</h1>
+        <p>this should change its color</p>
+        <h2>Bellow is the list of Students</h2>
+        <table border="2" width="600" >
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Courses</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ali</td>
+                <td>PIAIC001</td>
+                <td>
+                    <ol>
+                        <li><p>Artificial Intelligence</p></li>
+                        <li><p>Internet of Things</p></li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>huma</td>
+                <td>PIAIC002</td>
+                <td>
+                    <ol>
+                        <li><p>Blockchain</p></li>
+                        <li><p>Cloud Native Computing</p></li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
